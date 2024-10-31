@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #FF5722, #00BCD4);
+        }
+
+        /* Login container */
+        .login-container {
+            background-color: #fff;
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Logo styling */
+        .logo img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        /* Form title */
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input fields styling */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Login button styling */
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF5722;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #E64A19;
+        }
+
+        /* Forgot password link */
+        .login-container .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container .forgot-password a {
+            color: #FF5722;
+            text-decoration: none;
+        }
+
+        .login-container .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .login-container {
+                padding: 15px;
+            }
+
+            .login-container h2 {
+                font-size: 20px;
+            }
+
+            .login-container input[type="text"],
+            .login-container input[type="password"],
+            .login-container button {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .login-container .forgot-password {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="media/log.jpg" alt="University Logo">
+        </div>
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Enter your Id/Username" >
+            <input type="password" placeholder="Enter your password" >
+           
+            
+            <button type="submit" onclick="location.href='result.html'">LOG IN</button>
+             <!-- <button type="button" onclick="location.href='result.html'">LOG IN</button> -->
+           
+            
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot password? Reset</a>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimester GPA and CGPA Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .header {
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .profile-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-image img {
+            width: 80px;
+            height: 80px;
+            //border-radius: 50%;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            min-width: 600px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1rem;
+            }
+
+            .table th,
+            .table td {
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 0.9rem;
+            }
+
+            .table-container {
+                overflow-x: scroll;
+            }
+
+            .table th,
+            .table td {
+                padding: 6px;
+                font-size: 0.75rem;
+            }
+
+            .profile-image img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Trimester wise GPA and CGPA</div>
+        <div class="profile-image">
+            <img src="media/faruk.jpg" alt="Profile Image">
+        </div>
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>Trimester</th>
+                    <th>Credit(Probation)</th>
+                    <th>Term GPA(Probation)</th>
+                    <th>CGPA(Probation)</th>
+                    <th>Credit(Transcript)</th>
+                    <th>GPA(Transcript)</th>
+                    <th>CGPA(Transcript)</th>
+                </tr>
+                <tr>
+                    <td>223</td>
+                    <td>9.0</td>
+                    <td>3.20</td>
+                    <td>3.20</td>
+                    <td>9.0</td>
+                    <td>3.20</td>
+                    <td>3.20</td>
+                </tr>
+                <tr>
+                    <td>231</td>
+                    <td>9.0</td>
+                    <td>3.45</td>
+                    <td>3.32</td>
+                    <td>9.0</td>
+                    <td>3.45</td>
+                    <td>3.32</td>
+                </tr>
+                <tr>
+                    <td>232</td>
+                    <td>11.0</td>
+                    <td>3.34</td>
+                    <td>3.33</td>
+                    <td>11.0</td>
+                    <td>3.34</td>
+                    <td>3.33</td>
+                </tr>
+                <tr>
+                    <td>233</td>
+                    <td>11.0</td>
+                    <td>3.25</td>
+                    <td>3.31</td>
+                    <td>11.0</td>
+                    <td>3.25</td>
+                    <td>3.31</td>
+                </tr>
+                <tr>
+                    <td>241</td>
+                    <td>13.0</td>
+                    <td>3.45</td>
+                    <td>3.34</td>
+                    <td>13.0</td>
+                    <td>3.45</td>
+                    <td>3.34</td>
+                </tr>
+                <tr>
+                    <td>242</td>
+                    <td>11.0</td>
+                    <td>3.27</td>
+                    <td>3.32</td>
+                    <td>11.0</td>
+                    <td>3.27</td>
+                    <td>3.32</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
